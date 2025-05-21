@@ -1,0 +1,371 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+  My Blog Dashboard
+{% endblock %}
+
+{% block styles %}
+<style>
+    .dashboard-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 4rem 0;
+        margin-bottom: 2rem;
+    }
+    
+    .stats-card {
+        border-left: 4px solid #007bff;
+        transition: transform 0.3s;
+    }
+    
+    .stats-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .blog-item {
+        transition: all 0.2s;
+        border-left: 3px solid transparent;
+    }
+    
+    .blog-item:hover {
+        border-left: 3px solid #007bff;
+        background-color: #f8f9fa;
+    }
+    
+    .blog-status-published {
+        color: #28a745;
+    }
+    
+    .blog-status-draft {
+        color: #ffc107;
+    }
+    
+    .action-btn {
+        opacity: 0.7;
+        transition: opacity 0.2s;
+    }
+    
+    .action-btn:hover {
+        opacity: 1;
+    }
+    
+    .form-floating label {
+        color: #6c757d;
+    }
+    
+    .btn-add-new {
+        border-radius: 30px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Dashboard Header -->
+<section class="dashboard-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bold">My Blog Dashboard</h1>
+                <p class="lead">Manage your content, track performance, and grow your audience</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <button class="btn btn-primary btn-lg btn-add-new" data-bs-toggle="modal" data-bs-target="#newPostModal">
+                    <i class="bi bi-plus-circle-fill me-2"></i> New Post
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container py-4">
+    <!-- Stats Overview -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm stats-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title text-muted">Total Posts</h5>
+                    <h2 class="mb-0">12</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm stats-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title text-muted">Published</h5>
+                    <h2 class="mb-0">8</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm stats-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title text-muted">Drafts</h5>
+                    <h2 class="mb-0">4</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm stats-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title text-muted">Comments</h5>
+                    <h2 class="mb-0">48</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- My Posts Section -->
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">My Posts</h5>
+                    <div class="btn-group">
+                        <button class="btn btn-sm btn-outline-secondary active">All</button>
+                        <button class="btn btn-sm btn-outline-secondary">Published</button>
+                        <button class="btn btn-sm btn-outline-secondary">Drafts</button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item blog-item p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-1">Python 3.12: What's New in the Latest Version</h6>
+                                    <small class="text-muted">May 19, 2025 • <span class="blog-status-published"><i class="bi bi-circle-fill me-1"></i>Published</span></small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary action-btn me-1"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger action-btn"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item blog-item p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-1">Getting Started with Django</h6>
+                                    <small class="text-muted">May 15, 2025 • <span class="blog-status-published"><i class="bi bi-circle-fill me-1"></i>Published</span></small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary action-btn me-1"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger action-btn"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item blog-item p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-1">Bootstrap 5 Tips and Tricks</h6>
+                                    <small class="text-muted">May 10, 2025 • <span class="blog-status-published"><i class="bi bi-circle-fill me-1"></i>Published</span></small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary action-btn me-1"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger action-btn"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item blog-item p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-1">Building RESTful APIs with Django REST Framework</h6>
+                                    <small class="text-muted">May 5, 2025 • <span class="blog-status-draft"><i class="bi bi-circle-fill me-1"></i>Draft</span></small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary action-btn me-1"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger action-btn"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item blog-item p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="mb-1">Introduction to Machine Learning with Python</h6>
+                                    <small class="text-muted">May 1, 2025 • <span class="blog-status-draft"><i class="bi bi-circle-fill me-1"></i>Draft</span></small>
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary action-btn me-1"><i class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-sm btn-outline-danger action-btn"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer bg-white">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Sidebar -->
+        <div class="col-lg-4">
+            <!-- Quick Stats -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Analytics</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6>Most Viewed Posts</h6>
+                        <ol class="ps-3">
+                            <li>Getting Started with Django (1,245 views)</li>
+                            <li>Python 3.12: What's New (983 views)</li>
+                            <li>Bootstrap 5 Tips and Tricks (721 views)</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h6>Top Categories</h6>
+                        <div class="mb-2">
+                            <span>Python</span>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span>Django</span>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Web Development</span>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Manage Categories -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Categories</h5>
+                    <button class="btn btn-sm btn-outline-primary">Add New</button>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Python</span>
+                        <div>
+                            <button class="btn btn-sm btn-link text-primary p-0 me-2"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-link text-danger p-0"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Django</span>
+                        <div>
+                            <button class="btn btn-sm btn-link text-primary p-0 me-2"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-link text-danger p-0"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Web Development</span>
+                        <div>
+                            <button class="btn btn-sm btn-link text-primary p-0 me-2"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-link text-danger p-0"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Bootstrap</span>
+                        <div>
+                            <button class="btn btn-sm btn-link text-primary p-0 me-2"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-link text-danger p-0"><i class="bi bi-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Manage Tags -->
+            <div class="card shadow-sm">
+                <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Tags</h5>
+                    <button class="btn btn-sm btn-outline-primary">Add New</button>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="badge bg-light text-dark me-2 mb-2 p-2">
+                            Python <button class="btn-close ms-1" style="font-size: 0.6rem;"></button>
+                        </div>
+                        <div class="badge bg-light text-dark me-2 mb-2 p-2">
+                            Django <button class="btn-close ms-1" style="font-size: 0.6rem;"></button>
+                        </div>
+                        <div class="badge bg-light text-dark me-2 mb-2 p-2">
+                            Web <button class="btn-close ms-1" style="font-size: 0.6rem;"></button>
+                        </div>
+                        <div class="badge bg-light text-dark me-2 mb-2 p-2">
+                            CSS <button class="btn-close ms-1" style="font-size: 0.6rem;"></button>
+                        </div>
+                        <div class="badge bg-light text-dark me-2 mb-2 p-2">
+                            Bootstrap <button class="btn-close ms-1" style="font-size: 0.6rem;"></button>
+                        </div>
+                        <div class="badge bg-light text-dark me-2 mb-2 p-2">
+                            JavaScript <button class="btn-close ms-1" style="font-size: 0.6rem;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New Post Modal -->
+<div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="newPostModalLabel">Create New Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="postTitle" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="postTitle" placeholder="Enter post title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="postContent" class="form-label">Content</label>
+                        <textarea class="form-control" id="postContent" rows="6" placeholder="Write your post content here..."></textarea>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="postCategory" class="form-label">Category</label>
+                            <select class="form-select" id="postCategory">
+                                <option selected>Select category</option>
+                                <option>Python</option>
+                                <option>Django</option>
+                                <option>Web Development</option>
+                                <option>Bootstrap</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="postTags" class="form-label">Tags</label>
+                            <input type="text" class="form-control" id="postTags" placeholder="Enter tags separated by commas">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="postImage" class="form-label">Featured Image</label>
+                        <input class="form-control" type="file" id="postImage">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-outline-primary">Save as Draft</button>
+                <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

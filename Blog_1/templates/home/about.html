@@ -1,0 +1,114 @@
+{% extends 'home/base.html' %}
+
+{% block title %}
+  Blog About Us
+{% endblock %}
+
+{% block styles %}
+  
+<style>
+        .about-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516541196182-6bdb0516ed27');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+        }
+        
+        .team-img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+  
+    <!-- About Header -->
+    <section class="about-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About Us</h1>
+            <p class="lead">Learn more about our story and mission</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <div class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2>Our Story</h2>
+                <p class="lead">We're passionate about sharing knowledge and building community.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" class="img-fluid rounded shadow-lg" alt="Team working">
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="mb-4">Our Values</h2>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h5 class="card-title">Innovation</h5>
+                        <p class="card-text">We constantly seek new ways to improve and create value for our readers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5 class="card-title">Community</h5>
+                        <p class="card-text">We believe in the power of community and strive to foster connection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h5 class="card-title">Quality</h5>
+                        <p class="card-text">We're committed to high-quality content that informs and inspires.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Meet Our Team</h2>
+                <p class="lead">The faces behind the blog</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="team-img mb-3 shadow" alt="Team member">
+                <h5>John Doe</h5>
+                <p class="text-muted">Founder & Editor</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="team-img mb-3 shadow" alt="Team member">
+                <h5>Jane Smith</h5>
+                <p class="text-muted">Content Strategist</p>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg" class="team-img mb-3 shadow" alt="Team member">
+                <h5>Mike Johnson</h5>
+                <p class="text-muted">Developer</p>
+            </div>
+        </div>
+    </div>
+
+  <!-- Content goes here -->
+{% endblock %}
