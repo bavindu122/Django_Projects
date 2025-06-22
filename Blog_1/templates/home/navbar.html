@@ -1,25 +1,39 @@
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'home:home' %}">My Blog</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'home:home' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blog:blog' %}">Blog</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home:about' %}">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home:contact' %}">Contact</a>
-                </li>
-            </ul>
-        </div>
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'home:home' %}">My Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link {% block home_active %}
+            {% endblock %}"
+            href="{% url 'home:home' %}">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block blog_active %}
+            {% endblock %}"
+            href="{% url 'blog:blog' %}">
+            Blog
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block about_active %}
+            {% endblock %}"
+            href="{% url 'home:about' %}">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% block contact_active %}
+            {% endblock %}"
+            href="{% url 'home:contact' %}">
+            Contact
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

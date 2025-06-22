@@ -1,90 +1,34 @@
 [
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -149,6 +93,110 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -240,7 +288,7 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
+        "label": "redirect",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
         "isExtraImport": true,
@@ -345,6 +393,30 @@
         "documentation": {}
     },
     {
+        "label": "constants",
+        "importPath": "django.contrib.messages",
+        "description": "django.contrib.messages",
+        "isExtraImport": true,
+        "detail": "django.contrib.messages",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -446,6 +518,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Blog_1.blog.migrations.0001_initial",
+        "description": "Blog_1.blog.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Post',\n            fields=[\n                ('sno', models.AutoField(primary_key=True, serialize=False)),\n                ('title', models.CharField(max_length=100)),",
+        "detail": "Blog_1.blog.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Blog_1.blog.migrations.0002_rename_timestamp_post_created_at_remove_post_sno_and_more",
+        "description": "Blog_1.blog.migrations.0002_rename_timestamp_post_created_at_remove_post_sno_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('blog', '0001_initial'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='post',\n            old_name='timestamp',\n            new_name='created_at',\n        ),",
+        "detail": "Blog_1.blog.migrations.0002_rename_timestamp_post_created_at_remove_post_sno_and_more",
+        "documentation": {}
+    },
+    {
         "label": "BlogConfig",
         "kind": 6,
         "importPath": "Blog_1.blog.apps",
@@ -455,11 +545,20 @@
         "documentation": {}
     },
     {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "Blog_1.blog.models",
+        "description": "Blog_1.blog.models",
+        "peekOfCode": "class Post(models.Model):\n    STATUS_CHOICES = [\n        ('draft', 'Draft'),\n        ('published', 'Published'),\n    ]\n    title = models.CharField(max_length=200)\n    author = models.CharField(max_length=100)\n    content = models.TextField()\n    category = models.CharField(max_length=100)\n    image = models.ImageField(upload_to='blog_images/', blank=True, null=True)",
+        "detail": "Blog_1.blog.models",
+        "documentation": {}
+    },
+    {
         "label": "app_name",
         "kind": 5,
         "importPath": "Blog_1.blog.urls",
         "description": "Blog_1.blog.urls",
-        "peekOfCode": "app_name = 'blog'  \nurlpatterns = [\n    path('', views.blog, name=\"blog\")\n]",
+        "peekOfCode": "app_name = 'blog'  \nurlpatterns = [\n    path('', views.blog, name=\"blog\")\n    ,\n    path('createPost/', views.createPost, name=\"createPost\"),\n]",
         "detail": "Blog_1.blog.urls",
         "documentation": {}
     },
@@ -468,7 +567,7 @@
         "kind": 5,
         "importPath": "Blog_1.blog.urls",
         "description": "Blog_1.blog.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.blog, name=\"blog\")\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.blog, name=\"blog\")\n    ,\n    path('createPost/', views.createPost, name=\"createPost\"),\n]",
         "detail": "Blog_1.blog.urls",
         "documentation": {}
     },
@@ -477,7 +576,16 @@
         "kind": 2,
         "importPath": "Blog_1.blog.views",
         "description": "Blog_1.blog.views",
-        "peekOfCode": "def blog(request):\n    return render(request,'blog/blog.html')",
+        "peekOfCode": "def blog(request):\n    return render(request, 'blog/blog.html')\ndef createPost(request):\n    if request.method == \"POST\":\n        title = request.POST.get(\"title\")\n        author = request.POST.get(\"author\")\n        content = request.POST.get(\"content\")\n        category = request.POST.get(\"category\")\n        image = request.FILES.get(\"image\")\n        action = request.POST.get(\"action\")  # Get draft or publish action",
+        "detail": "Blog_1.blog.views",
+        "documentation": {}
+    },
+    {
+        "label": "createPost",
+        "kind": 2,
+        "importPath": "Blog_1.blog.views",
+        "description": "Blog_1.blog.views",
+        "peekOfCode": "def createPost(request):\n    if request.method == \"POST\":\n        title = request.POST.get(\"title\")\n        author = request.POST.get(\"author\")\n        content = request.POST.get(\"content\")\n        category = request.POST.get(\"category\")\n        image = request.FILES.get(\"image\")\n        action = request.POST.get(\"action\")  # Get draft or publish action\n        # Validate the data\n        if not title or len(title) < 5:",
         "detail": "Blog_1.blog.views",
         "documentation": {}
     },
@@ -603,7 +711,7 @@
         "kind": 5,
         "importPath": "Blog_1.Blog_1.settings",
         "description": "Blog_1.Blog_1.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAGE_TAGS = {",
         "detail": "Blog_1.Blog_1.settings",
         "documentation": {}
     },
@@ -612,7 +720,7 @@
         "kind": 5,
         "importPath": "Blog_1.Blog_1.settings",
         "description": "Blog_1.Blog_1.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAGE_TAGS = {\n    messages.ERROR: 'danger',",
         "detail": "Blog_1.Blog_1.settings",
         "documentation": {}
     },
@@ -621,7 +729,7 @@
         "kind": 5,
         "importPath": "Blog_1.Blog_1.settings",
         "description": "Blog_1.Blog_1.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAGE_TAGS = {\n    messages.ERROR: 'danger',\n    messages.INFO: 'info',",
         "detail": "Blog_1.Blog_1.settings",
         "documentation": {}
     },
@@ -630,7 +738,7 @@
         "kind": 5,
         "importPath": "Blog_1.Blog_1.settings",
         "description": "Blog_1.Blog_1.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAGE_TAGS = {\n    messages.ERROR: 'danger',\n    messages.INFO: 'info',\n    messages.SUCCESS: 'success',\n    messages.WARNING: 'warning',\n}",
         "detail": "Blog_1.Blog_1.settings",
         "documentation": {}
     },
@@ -639,7 +747,34 @@
         "kind": 5,
         "importPath": "Blog_1.Blog_1.settings",
         "description": "Blog_1.Blog_1.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMESSAGE_TAGS = {\n    messages.ERROR: 'danger',\n    messages.INFO: 'info',\n    messages.SUCCESS: 'success',\n    messages.WARNING: 'warning',\n}\nimport os\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "Blog_1.Blog_1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MESSAGE_TAGS",
+        "kind": 5,
+        "importPath": "Blog_1.Blog_1.settings",
+        "description": "Blog_1.Blog_1.settings",
+        "peekOfCode": "MESSAGE_TAGS = {\n    messages.ERROR: 'danger',\n    messages.INFO: 'info',\n    messages.SUCCESS: 'success',\n    messages.WARNING: 'warning',\n}\nimport os\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "Blog_1.Blog_1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "Blog_1.Blog_1.settings",
+        "description": "Blog_1.Blog_1.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "Blog_1.Blog_1.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "Blog_1.Blog_1.settings",
+        "description": "Blog_1.Blog_1.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
         "detail": "Blog_1.Blog_1.settings",
         "documentation": {}
     },
@@ -648,7 +783,7 @@
         "kind": 5,
         "importPath": "Blog_1.Blog_1.urls",
         "description": "Blog_1.Blog_1.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('home.urls', namespace='home')),\n    path('blog/', include('blog.urls', namespace='blog')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('home.urls', namespace='home')),\n    path('blog/', include('blog.urls', namespace='blog')),\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "Blog_1.Blog_1.urls",
         "documentation": {}
     },
@@ -720,7 +855,7 @@
         "kind": 2,
         "importPath": "Blog_1.home.views",
         "description": "Blog_1.home.views",
-        "peekOfCode": "def home(request):\n    return render(request, 'home/home.html')\ndef contact(request):\n    if request.method == \"POST\":\n        name = request.POST.get(\"name\")\n        phone = request.POST.get(\"phone\")\n        email = request.POST.get(\"email\")\n        content = request.POST.get(\"content\")\n        # Save the data to the database\n        contact = Contact(name=name, phone=phone, email=email, content=content)",
+        "peekOfCode": "def home(request):\n    return render(request, 'home/home.html')\ndef contact(request):\n    if request.method == \"POST\":\n        name = request.POST.get(\"name\")\n        phone = request.POST.get(\"phone\")\n        email = request.POST.get(\"email\")\n        content = request.POST.get(\"content\")\n        # Validate the data\n        if(len(name)<3):",
         "detail": "Blog_1.home.views",
         "documentation": {}
     },
@@ -729,7 +864,7 @@
         "kind": 2,
         "importPath": "Blog_1.home.views",
         "description": "Blog_1.home.views",
-        "peekOfCode": "def contact(request):\n    if request.method == \"POST\":\n        name = request.POST.get(\"name\")\n        phone = request.POST.get(\"phone\")\n        email = request.POST.get(\"email\")\n        content = request.POST.get(\"content\")\n        # Save the data to the database\n        contact = Contact(name=name, phone=phone, email=email, content=content)\n        contact.save()\n    return render(request, 'home/contact.html')",
+        "peekOfCode": "def contact(request):\n    if request.method == \"POST\":\n        name = request.POST.get(\"name\")\n        phone = request.POST.get(\"phone\")\n        email = request.POST.get(\"email\")\n        content = request.POST.get(\"content\")\n        # Validate the data\n        if(len(name)<3):\n            messages.error(request, \"Please fill the form correctly.\")\n            return render(request, 'home/contact.html')",
         "detail": "Blog_1.home.views",
         "documentation": {}
     },
