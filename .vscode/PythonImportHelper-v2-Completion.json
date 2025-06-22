@@ -450,6 +450,22 @@
         "documentation": {}
     },
     {
+        "label": "Post",
+        "importPath": "blog.models",
+        "description": "blog.models",
+        "isExtraImport": true,
+        "detail": "blog.models",
+        "documentation": {}
+    },
+    {
+        "label": "Paginator",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -855,7 +871,7 @@
         "kind": 2,
         "importPath": "Blog_1.home.views",
         "description": "Blog_1.home.views",
-        "peekOfCode": "def home(request):\n    return render(request, 'home/home.html')\ndef contact(request):\n    if request.method == \"POST\":\n        name = request.POST.get(\"name\")\n        phone = request.POST.get(\"phone\")\n        email = request.POST.get(\"email\")\n        content = request.POST.get(\"content\")\n        # Validate the data\n        if(len(name)<3):",
+        "peekOfCode": "def home(request):\n    posts = Post.objects.filter(status='published').order_by('-created_at')\n    featured_post = posts.first() if posts.exists() else None\n    latest_posts = posts.exclude(id=featured_post.id) if featured_post else posts\n    # Pagination\n    paginator = Paginator(latest_posts, 6)  # Show 6 posts per page\n    page_number = request.GET.get('page')\n    page_obj = paginator.get_page(page_number)\n    context = {\n        'posts': page_obj,",
         "detail": "Blog_1.home.views",
         "documentation": {}
     },
